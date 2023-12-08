@@ -1,0 +1,94 @@
+/*start of fonts*/
+@font-face {
+    font-family: 'iransans';
+    src: url("fonts/iransans_medium.woff2");
+}
+/*end of fonts*/
+
+/*start of common styles*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'iransans', serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#e52e71,#ff8a00);
+    font-size: 1.6rem;
+}
+/*end of common styles*/
+
+.menu {
+    width: 6.7rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+}
+
+.menu.active {
+    width: 19.5rem;
+}
+
+.menu ul {
+    position: relative;
+    width: 100%;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 2.3rem;
+    transition: all .3s ease-in-out;
+}
+
+.menu ul li:hover {
+    background-color: #DDD;
+}
+
+.menu ul li span {
+    margin-right: 2rem;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu.active span {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
